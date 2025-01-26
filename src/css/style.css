@@ -2,7 +2,8 @@
 
 :root {
     --white: white;
-    --blue: #222A68;
+    --main-color: #222A68;
+    /*--main-color: #202426;*/
     --green: lightgreen;
     --max-width: 1200px;
 }
@@ -21,7 +22,7 @@ header {
     position: sticky;
     width: 100%;
     padding: 1rem;
-    background-color: var(--blue);
+    background-color: var(--main-color);
     /* make sure that header is in front of any other element */
     z-index: 10;
     top: 0;
@@ -73,10 +74,10 @@ nav {
     height: 0;
     overflow: hidden;
     transition: height 0.4s ease-in-out;
-    background-color: var(--blue);
+    background-color: var(--main-color);
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
-    font-size: 2rem;
+    font-size: 28px;
 }
 
 ul {
@@ -101,7 +102,7 @@ li:hover {
     height: 800px;
     margin: auto;
     background-image: url("../img/rainbow.jpg");
-    background-color: var(--blue);
+    background-color: var(--main-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,7 +135,6 @@ li:hover {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin: 2rem;
 }
 
 .profile .text {
@@ -150,4 +150,32 @@ h1 {
 h3 {
     font-size: 24px;
     margin: 0;
+}
+
+@media (max-width: 750px) {
+    .hero-image {
+        height: 600px;
+    }
+
+    .profile .picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 { font-size: 60px }
+    h3 { font-size: 18px }
+}
+
+@media (max-width: 450px) {
+    .hero-image {
+        height: 450px;
+    }
+
+    .profile .picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 { font-size: 40px }
+    h3 { font-size: 12px }
 }
