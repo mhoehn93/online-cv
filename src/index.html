@@ -19,10 +19,10 @@
 
       <nav>
         <ul>
-          <li>Professional Experience</li>
-          <li>Education</li>
-          <li>Skills</li>
-          <li>Contact</li>
+          <li onclick="scrollToAnchor('professional-experience')">Professional Experience</li>
+          <li onclick="scrollToAnchor('education')">Education</li>
+          <li onclick="scrollToAnchor('skills')">Skills</li>
+          <li onclick="scrollToAnchor('contact')">Contact</li>
         </ul>
       </nav>
     </header>
@@ -35,123 +35,266 @@
             <div class="picture"></div>
             <div class="text">
               <h1>Manuel Höhn</h1>
-              <h3>Media and Business Information Technologist</h3>
+              <h2>Media and Business Information Technologist</h2>
             </div>
           </div>
         </div>
       </section>
 
       <!-- professional experience section -->
-      <section class="professional-experience">
+      <section id="professional-experience">
+        <h3>Professional Experience</h3>
         <div class="container">
 
-          <section class="job">
-            <div class="title">Application Manager</div>
-            <div>
-              <span class="employer">Swisscom Banking Consulting, Zurich</span>
-              <span class="period">AUG 2024 - NOW</span>
+          <div class="job-container">
+            <div class="timeline">
+              <div></div>
+              <div></div>
             </div>
-            <div class="text">
-              Ensuring flawless processing of payment transactions.
-              Assisting in change projects.
-            </div>
-          </section>
 
-          <section class="job">
-            <div class="title">Travel</div>
-            <div>
-              <span class="employer">Career Break</span>
-              <span class="period">JUL 2023 - JUL 2024</span>
-            </div>
-            <div class="text">
-              Reise durch Europa, Südostasien und Neuseeland.
-              Besuch von Koch- und Kaffeekursen und Arbeit auf einem Biobauernhof (Gärtnern, Pflastern, Holzspalten).
-              Weiterbildung mit CS50, Harvard's Einführungskurs in Computer Science.
-            </div>
-          </section>
+            <div class="period">AUG 2024</div>
 
-          <section class="job">
-            <div class="title">Quality Assurance & Testing Engineer</div>
-            <div>
-              <span class="employer">Datatrans Ltd, Zurich</span>
-              <span class="period">JUN 2022 - JUN 2023</span>
-            </div>
-            <div class="text">
-              Automatisierung von Test Cases. Analyse und Lösung von fehlgeschlagenen Tests.
-              Manuelles Testing von neuen Features und Zahlungsmitteln.
-            </div>
-          </section>
+            <section class="job">
+              <div class="title">Application Manager</div>
+              <div class="employer">@ Swisscom Banking Consulting in Zurich</div>
+            </section>
+          </div>
 
-          <section class="job">
-            <div class="title">Head of Customer Success</div>
-            <div>
-              <span class="employer">Datatrans Ltd, Zurich</span>
-              <span class="period">AUG 2016 - MAI 2022</span>
+          <div class="job-container">
+            <div class="timeline">
+              <div></div>
+              <div></div>
             </div>
-            <div class="text">
-              Leitung eines Teams von acht Mitarbeitern.
-              Schnittstellenposition zwischen internen Teams, Partnern und Kunden.
-              Durchführung von Bewerbungsgesprächen. Planung und Durchführung von Schulungen.
-              Fortsetzung der Aufgaben als technischer Kundenbetreuer.
-            </div>
-          </section>
 
-          <section class="job">
-            <div class="title">Technical Customer Advisor E-Commerce</div>
-            <div>
-              <span class="employer">Datatrans Ltd, Zurich</span>
-              <span class="period">JAN 2015 - JUL 2016</span>
-            </div>
-            <div class="text">
-              Beratung von Online-Händlern bezüglich E-Payment und Integration von Zahlungsschnittstellen.
-              Analyse und Lösung von technischen Problemen auf Applikationsebene.
-              Unterstützung von internen Projekten mittels Datenanalyse, Anforderungserhebung und manuellem Testing.
-            </div>
-          </section>
+            <div class="period">JUL 2023</div>
 
-          <section class="job">
-            <div class="title">Junior Web Developer</div>
-            <div>
-              <span class="employer">LOGIN web Ltd, Lucerne</span>
-              <span class="period">JAN 2014 - DEZ 2014</span>
-            </div>
-            <div class="text">
-              Erstellung und Pflege statischer Webseiten für Geschäftskunden.
-              Umsetzung neuer Anforderungen an SEPHIR-Plattform in Zusammenarbeit mit Berufsbildungsverbänden.
-            </div>
-          </section>
+            <section class="job">
+              <div class="title">Travel</div>
+              <div class="employer">during year-long career break</div>
+            </section>
+          </div>
 
-          <section class="job">
-            <div class="title">Media Technologist</div>
-            <div>
-              <span class="employer">vision4health Laufenberg & Co, Freienbach</span>
-              <span class="period">OKT 2008 - OKT 2013</span>
+          <div class="job-container">
+            <div class="timeline">
+              <div></div>
+              <div></div>
             </div>
-            <div class="text">
-              Installation und Wartung von Telefon- und IT-Systemen am neuen Schweizer Standort.
-              Unterstützung der IT-Systeme an mehreren europäischen Standorten.
-              Technisches Onboarding neuer Mitarbeiter. Entwicklung interner Tools für administrative Zwecke.
-              Mithilfe bei verschiedenen administrativen Tätigkeiten.
+
+            <div class="period">JUN 2022</div>
+
+            <section class="job">
+              <div class="title">Quality Assurance & Testing Engineer</div>
+              <div class="employer">@ Datatrans Ltd in Zurich</div>
+            </section>
+          </div>
+
+          <div class="job-container">
+            <div class="timeline">
+              <div></div>
+              <div></div>
             </div>
-          </section>
+
+            <div class="period">AUG 2016</div>
+
+            <section class="job">
+              <div class="title">Head of Customer Success</div>
+              <div class="employer">@ Datatrans Ltd in Zurich</div>
+            </section>
+          </div>
+
+          <div class="job-container">
+
+            <div class="timeline">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="period">JAN 2015</div>
+
+            <section class="job">
+              <div class="title">Technical Customer Advisor E-Commerce</div>
+              <div class="employer">@ Datatrans Ltd in Zurich</div>
+            </section>
+          </div>
+
+          <div class="job-container">
+            <div class="timeline">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="period">JAN 2014</div>
+
+            <section class="job">
+              <div class="title">Junior Web Developer</div>
+              <div class="employer">@ LOGIN web Ltd in Lucerne</div>
+            </section>
+          </div>
+
+          <div class="job-container">
+            <div class="timeline">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="period">OCT 2008</div>
+
+            <section class="job">
+              <div class="title">Media Technologist</div>
+              <div class="employer">@ vision4health in Freienbach</div>
+            </section>
+          </div>
 
         </div>
       </section>
 
       <!-- education section -->
+      <section id="education">
+        <h3>Education</h3>
+        <div class="container">
+
+          <section class="diploma">
+            <div class="period">JUL 2009 – JUN 2013</div>
+            <div class="title">Media Technologist</div>
+            <div class="degree">Federal Diploma of Vocational Education and Training, incl. Federal Vocation Baccalaureate</div>
+            <div class="organisation">@ BBZ Wirtschaft, Informatik und Technik Sursee</div>
+            <div><i class="fas fa-award"></i></div>
+          </section>
+
+          <section class="diploma">
+            <div class="period">AUG 2024 – JAN 2028 (expected)</div>
+            <div class="title">Bachelor of Science, Informatics</div>
+            <div class="organisation">@ Swiss Distance University of Applied Sciences</div>
+            <div><i class="fas fa-award"></i></div>
+          </section>
+
+          <section class="diploma">
+            <div class="period">FEB 2019 – FEB 2022</div>
+            <div class="title">Business Information Technologist</div>
+            <div class="degree">Advanced Federal Diploma of Higher Education</div>
+            <div class="organisation">@ HSO Business School Switzerland</div>
+            <div><i class="fas fa-award"></i></div>
+          </section>
+        </div>
+      </section>
 
       <!-- skills section -->
+      <section id="skills">
+        <h3>Skills</h3>
+
+        <div class="container">
+
+          <section class="skill">
+            <h4>Languages</h4>
+
+            <div>
+              <div><b>German</b> (Native)</div>
+              <div class="empty">
+                <div class="rating s-10"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>English</b> (C1)</div>
+              <div class="empty">
+                <div class="rating s-9"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>French</b> (B1)</div>
+              <div class="empty">
+                <div class="rating s-7"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="skill">
+            <h4>Technical skills</h4>
+
+            <div>
+              <div><b>Microsoft Office</b></div>
+              <div>(Word, Excel, Power Query)</div>
+              <div class="empty">
+                <div class="rating s-10"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>Object-Oriented Programming</b></div>
+              <div>(Java, Python)</div>
+              <div class="empty">
+                <div class="rating s-7"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>Software Testing</b></div>
+              <div>(JUnit, Selenium, Postman)</div>
+              <div class="empty">
+                <div class="rating s-6"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>Web Engineering</b></div>
+              <div>(HTML, CSS, JavaScript)</div>
+              <div class="empty">
+                <div class="rating s-8"></div>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="skill">
+            <h4>Technical skills</h4>
+
+            <div>
+              <div><b>Microsoft Office</b></div>
+              <div>(Word, Excel, Power Query)</div>
+              <div class="empty">
+                <div class="rating s-10"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>Object-Oriented Programming</b></div>
+              <div>(Java, Python)</div>
+              <div class="empty">
+                <div class="rating s-7"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>Software Testing</b></div>
+              <div>(JUnit, Selenium, Postman)</div>
+              <div class="empty">
+                <div class="rating s-6"></div>
+              </div>
+            </div>
+
+            <div>
+              <div><b>Web Engineering</b></div>
+              <div>(HTML, CSS, JavaScript)</div>
+              <div class="empty">
+                <div class="rating s-8"></div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </section>
 
     </main>
 
     <footer>
       <div class="container">
-        <div class="contact">
+        <div id="contact">
           <i class="fa-brands fa-linkedin"></i>
           <i class="fa-solid fa-compass"></i>
         </div>
         <div class="horizontal-divider"></div>
-        <div class="copyright">&copy; ManuScript Software 2025</div>
+        <div class="copyright">&copy; Manuel Höhn 2025</div>
       </div>
     </footer>
 

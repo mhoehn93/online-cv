@@ -3,9 +3,10 @@
 
 :root {
     --light-color: #F2F2F2;
-    /*--main-color: #222A68;*/
+    --grey: #8C8C88;
     --main-color: #202426;
-    --green: lightgreen;
+    --dark-green: #6C733D;
+    --green: #9DA65D;
     --max-width: 1200px;
 }
 
@@ -13,13 +14,20 @@
     box-sizing: border-box;
 }
 
+.fade-in {
+    opacity: 1;
+}
+
 body {
     margin: 0;
-    background-color: var(--light-color);
+    background-color: var(--main-color);
     color: var(--light-color);
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: "Oswald", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
 }
 
 header {
@@ -79,9 +87,8 @@ nav {
     overflow: hidden;
     transition: height 0.4s ease-in-out;
     background-color: var(--main-color);
-    border-top: 1px solid var(--light-color);
-    border-bottom: 1px solid var(--light-color);
-    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
 }
 
 ul {
@@ -102,9 +109,8 @@ li:hover {
     color: var(--green);
 }
 
-
 section, footer, .container {
-    border: 1px dashed grey; /* remove for production */
+    /* border: 1px dashed grey;  remove for production */
 }
 
 .container {
@@ -112,9 +118,9 @@ section, footer, .container {
     margin: auto;
 }
 
-
 .hero-image {
-    height: 800px;
+    height: calc(100vh - 52px);
+    min-height: 800px;
     background-image: url("../img/rainbow.jpg");
     background-color: var(--main-color);
     background-position: center;
@@ -157,53 +163,182 @@ section, footer, .container {
 }
 
 h1 {
+    font-family: "Oswald", sans-serif;
     font-size: 72px;
     margin: 0;
 }
 
-h3 {
+h2 {
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     margin: -1rem 0 0 0;
 }
 
-.professional-experience {
-    padding: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
+h3 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: var(--light-color);
+    font-size: 28px;
+    text-align: center;
+    margin: 1rem 0;
 }
 
-.professional-experience .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+#professional-experience,
+#education,
+#skills {
+    padding: 2rem;
 }
 
+#professional-experience {
+}
+
+#professional-experience .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.job-container {
+    display: flex;
+    width: 400px;
+}
+
+.timeline > div {
+    height: 50%;
+    width: 100%;
+    border-left: 1px solid var(--light-color);
+}
+
+.job-container:first-of-type .timeline > div:first-of-type {
+    border-color: var(--main-color);
+}
+
+.job-container:last-of-type .timeline > div:last-of-type {
+    border-color: var(--main-color);
+}
+
+.timeline > div:last-of-type::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    border: 4px solid var(--main-color);
+    position: absolute;
+    transform: translate(-10.5px, -10.5px);
+}
+
+.job-container:first-of-type .period {
+    color: var(--green);
+}
+
+.job-container:first-of-type .timeline > div:last-of-type::before {
+    background-color: var(--green);
+}
+
+.job-container:first-of-type .job {
+    color: var(--green);
+}
+
+.job-container .period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 125px;
+}
 
 .job {
-    background-color: var(--main-color);
-    color: var(--light-color);
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 10px;
 }
 
-.job div:nth-of-type(1) {
+.title {
     font-weight: bold;
 }
 
-.job div:nth-of-type(2) {
+#education .container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 }
 
-.job div:nth-of-type(3) {
-    margin-top: 1rem;
+.diploma {
+    flex: 1;
+    height: 300px;
+    padding: 1rem;
+    border: 2px solid var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.diploma div {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.diploma div i {
+    color: var(--grey);
+    font-size: 40px;
+}
+
+.diploma:nth-of-type(2) {
+    color: var(--green);
+    border-color: var(--green);
+    font-size: 16px;
+    height: 350px;
+}
+
+.diploma:nth-of-type(2) div i {
+    color: var(--green);
+    font-size: 45px;
+}
+
+#skills .container {
+    display: flex;
+    gap: 2rem;
+}
+
+.skill {
+    width: 100%;
+}
+
+h4 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.empty {
+    width: 100%;
+    height: 15px;
+    background-color: var(--light-color);
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+.rating {
+    background-color: var(--green);
+    height: 100%;
+}
+
+.s-10 { width: 100% }
+.s-9 { width: 90% }
+.s-8 { width: 80% }
+.s-7 { width: 70% }
+.s-6 { width: 60% }
 
 footer {
     background-color: var(--main-color);
     font-size: 16px;
     padding: 1rem;
+    font-family: "Oswald", sans-serif;
 }
 
 footer .container {
@@ -214,22 +349,22 @@ footer .container {
     gap: 1rem;
 }
 
-footer .contact i {
+footer #contact i {
     margin: 0 0.25rem;
     cursor: pointer;
 }
 
-footer .contact i:hover {
+footer #contact i:hover {
     color: var(--green);
 }
 
 footer .horizontal-divider {
-    border-top: 1px solid var(--light-color);
+    border-top: 1px solid var(--grey);
 }
 
 @media (max-width: 750px) {
     .hero-image {
-        height: 600px;
+        min-height: 600px;
     }
 
     .profile .picture {
@@ -241,15 +376,36 @@ footer .horizontal-divider {
         font-size: 54px;
     }
 
-    h3 {
+    h2 {
         font-size: 15px;
         margin: -0.75rem 0 0 0;
+    }
+
+    #skills {
+        width: 100%;
+    }
+
+    #skills .container {
+        flex-direction: row;
+    }
+
+    #education .container {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .diploma {
+        width: 350px;
+    }
+
+    .diploma:nth-of-type(2) {
+        width: 400px;
     }
 }
 
 @media (max-width: 450px) {
     .hero-image {
-        height: 450px;
+        min-height: 450px;
     }
 
     .profile .picture {
@@ -261,8 +417,12 @@ footer .horizontal-divider {
         font-size: 36px;
     }
 
-    h3 {
+    h2 {
         font-size: 10px;
         margin: -0.5rem 0 0 0;
+    }
+
+    #skills .container {
+        flex-direction: column;
     }
 }
