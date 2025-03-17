@@ -416,36 +416,42 @@ footer .horizontal-divider {
     }
 
     .profile .picture {
-        width: 150px;
-        height: 150px;
+        width: 175px;
+        height: 175px;
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 43px;
     }
 
     h2 {
-        font-size: 10px;
+        font-size: 12px;
         margin: -0.5rem 0 0 0;
     }
 
     .job-container {
-        width: 325px;
-        font-size: 12px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .timeline {
+        display: none;
     }
 
     .job-container .period {
-        width: 100px;
+        width: unset;
+    }
+
+    .job {
+        align-items: center;
     }
 
     .diploma {
-        width: 300px;
-        font-size: 12px;
+        width: 90%;
     }
 
     .diploma.highlight {
-        width: 325px;
-        font-size: 13px;
+        width: 100%;
     }
 
     #skills .container {
