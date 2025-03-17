@@ -412,7 +412,7 @@ footer .horizontal-divider {
 
 @media (max-width: 450px) {
     .hero-image {
-        min-height: 450px;
+        min-height: 350px;
     }
 
     .profile .picture {
