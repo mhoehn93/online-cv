@@ -287,7 +287,7 @@ h3 {
     font-size: 40px;
 }
 
-.diploma:nth-of-type(2) {
+.diploma.highlight {
     flex: 5;
     color: var(--green);
     border-color: var(--green);
@@ -295,7 +295,7 @@ h3 {
     height: 350px;
 }
 
-.diploma:nth-of-type(2) div i {
+.diploma.highlight div i {
     color: var(--green);
     font-size: 45px;
 }
@@ -405,7 +405,7 @@ footer .horizontal-divider {
         width: 350px;
     }
 
-    .diploma:nth-of-type(2) {
+    .diploma.highlight {
         width: 400px;
     }
 }
@@ -427,6 +427,25 @@ footer .horizontal-divider {
     h2 {
         font-size: 10px;
         margin: -0.5rem 0 0 0;
+    }
+
+    .job-container {
+        width: 325px;
+        font-size: 12px;
+    }
+
+    .job-container .period {
+        width: 100px;
+    }
+
+    .diploma {
+        width: 300px;
+        font-size: 12px;
+    }
+
+    .diploma.highlight {
+        width: 325px;
+        font-size: 13px;
     }
 
     #skills .container {
