@@ -133,6 +133,7 @@ section, footer, .container {
 .hero-image .image-filter {
     height: 100%;
     width: 100%;
+    -webkit-backdrop-filter: brightness(30%);
     backdrop-filter: brightness(30%);
     display: flex;
     justify-content: center;
